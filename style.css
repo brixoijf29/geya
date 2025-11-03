@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #ff4d6d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ff4d6d;
+}
+
+/* HOME SECTION */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 10%;
+    gap: 5rem;
+}
+
+.home-img img {
+    width: 320px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ff4d6d;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #ff4d6d;
+}
+
+.typing-text span {
+    color: #ff4d6d;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 17px;
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    display: inline-block;
+    color: #ff4d6d;
+    font-size: 25px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff4d6d;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid #ff4d6d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 250px;
+    }
+}
+
+body {
+    background-color: #0e0e0e;
+    color: #f4f3f1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #141414;
+}
+
+.logo {
+    color: #FC46AA;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #f4f3f1;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #FC46AA;
+}
+
+.content {
+    padding: 100px 60px 60px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #FC46AA;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* 📱 Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .content {
+        padding: 100px 20px 40px; /* mas maliit sa gilid */
+    }
+
+    h1, h2, p {
+        text-align: center;
+    }
+
+    img, .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .button, .hire-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
